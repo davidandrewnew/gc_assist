@@ -4,11 +4,11 @@ import re
 import datetime
 
 # Credentials
-bearer_token = "your bearer token here"
+bearer_token = 'your bearer token here'
 
 # Misc
 tweet_fields = ['author_id', 'created_at']
-delimiters   = '[\s,()°]\s*'
+delimiters   = '[\s,;\()\[\{}"\'°]\s*'
 
 # This function returns a list of coordinates (with links,times) from tweet
 def get_coords(tweet):
